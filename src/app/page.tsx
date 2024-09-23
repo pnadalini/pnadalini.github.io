@@ -1,8 +1,12 @@
+import Hero from "@/components/Hero";
+
+import styles from "./page.module.scss";
+
 export default function Home() {
   return (
-    <main>
+    <main className={styles.main}>
       <div>
-        <h1>This is the portfolio</h1>
+        <Hero />
       </div>
     </main>
   );

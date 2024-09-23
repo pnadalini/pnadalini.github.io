@@ -1,0 +1,44 @@
+$spacer: 0.25rem !default;
+$spacings: 0, 1, 2, 3, 4, 5;
+
+:root {
+  @each $i in $spacings {
+    $spacing: $i * $spacer;
+    --pad#{$i}: #{$spacing};
+  }
+}
+
+$properties: (
+  "p": "padding",
+  "m": "margin",
+);
+
+$directions: (
+  // all directions
+  "": "",
+  "t": "-top",
+  "b": "-bottom",
+  "l": "-left",
+  "r": "-right",
+  "x": ("-left", "-right"),
+  "y": ("-top", "-bottom")
+);
+
+// Loop to generate padding and margin classes
+@each $prefix, $property in $properties {
+  @each $direction, $dir-value in $directions {
+    @each $space in $spacings {
+      @if type-of($dir-value) == list {
+        // For 'x' and 'y' (horizontal and vertical)
+        .#{$prefix}#{$direction}-#{$space} {
+          #{$property}#{nth($dir-value, 1)}: $space * $spacer;
+          #{$property}#{nth($dir-value, 2)}: $space * $spacer;
+        }
+      } @else {
+        .#{$prefix}#{$direction}-#{$space} {
+          #{$property}#{$dir-value}: $space * $spacer;
+        }
+      }
+    }
+  }
+}
