@@ -1,4 +1,5 @@
 @import "./styles/spacing.scss";
+@import "./styles/colors.scss";
 
 *,
 *:after,
@@ -7,14 +8,20 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #{$fadedWhite};
+  --foreground: #{$fadedBlack};
+  --darkPurple: #{$darkPurple};
+  --lightBlue: #{$lightBlue};
+  --green: #{$green};
+  --orange: #{$orange};
+  --fadedWhite: #{$fadedWhite};
+  --highlight: #{$highlight};
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #{$darkPurple};
+    --foreground: #{$white};
   }
   html {
     color-scheme: dark;
@@ -42,6 +49,10 @@ a {
   text-decoration: none;
 }
 
+.highlight {
+  color: var(--highlight);
+}
+
 .flex {
   display: flex;
 }
@@ -64,6 +75,10 @@ a {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .items-start {
