@@ -19,8 +19,8 @@ interface SectionTitleProps {
 
 const SectionTitle = ({ children, subtitle }: SectionTitleProps) => (
   <div className="text-center mb-16">
-    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">{children}</h2>
-    {subtitle ? <p className="text-xl text-gray-600 max-w-2xl mx-auto">{subtitle}</p> : null}
+    <h2 className="text-4xl md:text-5xl font-bold text-platinum mb-4">{children}</h2>
+    {subtitle ? <p className="text-xl text-french-gray max-w-2xl mx-auto">{subtitle}</p> : null}
   </div>
 );
 

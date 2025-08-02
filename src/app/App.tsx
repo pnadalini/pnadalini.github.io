@@ -31,7 +31,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-rich-black">
       <Navbar />
       <main>
         <Hero />

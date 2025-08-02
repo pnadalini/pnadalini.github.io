@@ -6,22 +6,63 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--platinum);
+  background-color: var(--rich-black);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Custom Color Palette */
+  --rich-black: #0c1926;
+  --rich-black-2: #0d1b2a;
+  --oxford-blue: #142133;
+  --oxford-blue-2: #1b263b;
+  --indigo-dye: #2e4059;
+  --yinmn-blue: #415a77;
+  --slate-gray: #5c7490;
+  --silver-lake-blue: #778da9;
+  --french-gray: #acb7c3;
+  --platinum: #e0e1dd;
+}
+
+@theme inline {
+  --color-rich-black: var(--rich-black);
+  --color-rich-black-2: var(--rich-black-2);
+  --color-oxford-blue: var(--oxford-blue);
+  --color-oxford-blue-2: var(--oxford-blue-2);
+  --color-indigo-dye: var(--indigo-dye);
+  --color-yinmn-blue: var(--yinmn-blue);
+  --color-slate-gray: var(--slate-gray);
+  --color-silver-lake-blue: var(--silver-lake-blue);
+  --color-french-gray: var(--french-gray);
+  --color-platinum: var(--platinum);
+
+  /* Semantic color mappings */
+  --color-primary-50: var(--platinum);
+  --color-primary-100: var(--french-gray);
+  --color-primary-200: var(--silver-lake-blue);
+  --color-primary-300: var(--slate-gray);
+  --color-primary-400: var(--yinmn-blue);
+  --color-primary-500: var(--indigo-dye);
+  --color-primary-600: var(--oxford-blue-2);
+  --color-primary-700: var(--oxford-blue);
+  --color-primary-800: var(--rich-black-2);
+  --color-primary-900: var(--rich-black);
+}
+
+#root {
+  width: 100%;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--silver-lake-blue);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--french-gray);
 }
 
 body {
@@ -44,12 +85,14 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--indigo-dye);
+  color: var(--platinum);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--yinmn-blue);
+  background-color: var(--oxford-blue-2);
 }
 button:focus,
 button:focus-visible {
@@ -58,13 +101,17 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: var(--rich-black);
+    background-color: var(--platinum);
   }
   a:hover {
-    color: #747bff;
+    color: var(--oxford-blue-2);
   }
   button {
-    background-color: #f9f9f9;
+    background-color: var(--slate-gray);
+    color: var(--platinum);
+  }
+  button:hover {
+    background-color: var(--yinmn-blue);
   }
 }
