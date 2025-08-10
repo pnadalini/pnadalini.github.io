@@ -1,0 +1,116 @@
+import React from "react";
+import { Section, SectionTitle } from "../../shared/Sections";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCalendar,
+  faCode,
+  faDatabase,
+  faGraduationCap,
+  faWrench,
+} from "@fortawesome/free-solid-svg-icons";
+
+const SkillBadge = ({ children }: { children: React.ReactNode }) => (
+  <div className="flex items-center gap-2 bg-silver-lake-blue/20 text-platinum px-3 py-1 rounded-full text-sm font-medium border border-silver-lake-blue/40">
+    {children}
+  </div>
+);
+
+const About = () => (
+  <Section id="about" className="bg-rich-black-2">
+    <SectionTitle subtitle="Get to know more about my background and expertise">
+      About Me
+    </SectionTitle>
+
+    <div className="grid lg:grid-cols-3 gap-12">
+      <div className="lg:col-span-2 space-y-6">
+        <div className="prose prose-lg max-w-none">
+          <p className="text-french-gray leading-relaxed">
+            I'm a software engineer leader with <strong>8+ years of experience</strong> leveraging
+            data to drive product decisions into successful user experiences. I'm a growth minded
+            individual that looks into improving software, processes and products for consumers and
+            businesses.
+          </p>
+          <p className="text-french-gray leading-relaxed">
+            I enjoy reading, content creation workflows and learning new skills like the usage of
+            MCP to integrate AI into real software applications. My passion lies in building
+            scalable solutions that impact millions of users.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-oxford-blue-2 p-6 rounded-xl shadow-md">
+            <div className="flex items-center gap-3 mb-4">
+              <FontAwesomeIcon
+                icon={faCalendar}
+                size="2x"
+                className="w-6 h-6 text-silver-lake-blue"
+              />
+              <h3 className="text-lg font-semibold text-platinum">Experience</h3>
+            </div>
+            <p className="text-2xl font-bold text-silver-lake-blue">8+ Years</p>
+            <p className="text-french-gray">Software Engineering</p>
+          </div>
+
+          <div className="bg-oxford-blue-2 p-6 rounded-xl shadow-md">
+            <div className="flex items-center gap-3 mb-4">
+              <FontAwesomeIcon
+                icon={faGraduationCap}
+                size="2x"
+                className="w-6 h-6 text-silver-lake-blue"
+              />
+              <h3 className="text-lg font-semibold text-platinum">Education</h3>
+            </div>
+            <p className="text-lg font-semibold text-platinum">Bachelor in Computer Science</p>
+            <p className="text-french-gray">Rafael Landivar University</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="space-y-8">
+        <div>
+          <h3 className="text-xl font-semibold text-platinum mb-4 flex items-center gap-2">
+            <FontAwesomeIcon icon={faCode} size="2x" className="w-6 h-6 text-silver-lake-blue" />
+            Languages
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {["TypeScript", "JavaScript", "Python", "Java", "C#"].map((skill) => (
+              <SkillBadge key={skill}>{skill}</SkillBadge>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-semibold text-platinum mb-4 flex items-center gap-2">
+            <FontAwesomeIcon icon={faWrench} size="2x" className="w-6 h-6 text-silver-lake-blue" />
+            Technologies
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {["React.js", "Redux", "Node.js", "NextJS", "Docker", "Jest", "Cypress"].map(
+              (skill) => (
+                <SkillBadge key={skill}>{skill}</SkillBadge>
+              ),
+            )}
+          </div>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-semibold text-platinum mb-4 flex items-center gap-2">
+            <FontAwesomeIcon
+              icon={faDatabase}
+              size="2x"
+              className="w-6 h-6 text-silver-lake-blue"
+            />
+            Other Skills
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {["SQL", "NoSQL", "Storybook", "Scrum", "Jira", "Figma"].map((skill) => (
+              <SkillBadge key={skill}>{skill}</SkillBadge>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </Section>
+);
+
+export default About;

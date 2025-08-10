@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "../shared/Navbar";
 import Hero from "../features/Hero";
+import About from "../features/About";
 
 import "./App.css";
 
@@ -35,7 +36,7 @@ const App = () => {
       <Navbar />
       <main>
         <Hero />
-        {/* <About /> */}
+        <About />
         {/* <Experience /> */}
       </main>
       {/* <Footer /> */}
