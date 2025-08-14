@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import Navbar from "../shared/Navbar";
 import Hero from "../features/Hero";
 import About from "../features/About";
+import Experience from "../features/Experiences";
+import Footer from "../shared/Footer";
 
 import "./App.css";
 
@@ -37,9 +39,9 @@ const App = () => {
       <main>
         <Hero />
         <About />
-        {/* <Experience /> */}
+        <Experience />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
