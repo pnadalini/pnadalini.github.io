@@ -19,15 +19,15 @@ const Footer = () => (
             href="https://linkedin.com/in/pnadalini"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary-200 hover:text-primary-100 transition-colors">
-            <FontAwesomeIcon icon={faLinkedin} className="w-18 h-8" size="2x" />
+            className="text-mint-green hover:text-primary-100 transition-colors">
+            <FontAwesomeIcon icon={faLinkedin} size="2x" className="text-mint-green hover:text-dark-mint-green transition-colors duration-300 transform hover:scale-110" />
           </a>
           <a
             href="https://github.com/pnadalini"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary-200 hover:text-primary-50 transition-colors">
-            <FontAwesomeIcon icon={faGithub} className="w-18 h-8" size="2x" />
+            className="text-mint-green hover:text-primary-50 transition-colors">
+            <FontAwesomeIcon icon={faGithub} size="2x" className="text-mint-green hover:text-dark-mint-green transition-colors duration-300 transform hover:scale-110" />
           </a>
         </div>
       </div>

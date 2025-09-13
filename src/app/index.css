@@ -25,6 +25,8 @@
   --silver-lake-blue: #778da9;
   --french-gray: #acb7c3;
   --platinum: #e0e1dd;
+  --mint-green: #74c69d;
+  --dark-mint-green: #52b788;
 }
 
 @theme inline {
@@ -38,6 +40,8 @@
   --color-silver-lake-blue: var(--silver-lake-blue);
   --color-french-gray: var(--french-gray);
   --color-platinum: var(--platinum);
+  --color-mint-green: var(--mint-green);
+  --color-dark-mint-green: var(--dark-mint-green);
 
   /* Semantic color mappings */
   --color-primary-50: var(--platinum);

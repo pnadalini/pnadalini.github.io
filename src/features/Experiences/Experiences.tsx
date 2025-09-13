@@ -39,6 +39,7 @@ const Experience = () => {
         "Storybook",
         "Redis",
         "PostgreSQL",
+        "Kubernetes",
       ],
     },
     {

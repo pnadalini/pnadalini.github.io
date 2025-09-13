@@ -33,7 +33,7 @@ const About = () => (
           <p className="text-primary-100 leading-relaxed">
             I enjoy reading, content creation workflows and learning new skills like the usage of
             MCP to integrate AI into real software applications. My passion lies in building
-            scalable solutions that impact millions of users.
+            scalable solutions that helps users and businesses.
           </p>
         </div>
 
@@ -85,7 +85,7 @@ const About = () => (
             Technologies
           </h3>
           <div className="flex flex-wrap gap-2">
-            {["React.js", "Redux", "Node.js", "NextJS", "Docker", "Jest", "Cypress"].map(
+            {["React.js", "Redux", "Node.js", "NextJS", "Docker", "Jest", "Cypress", "Kubernetes"].map(
               (skill) => (
                 <SkillBadge key={skill}>{skill}</SkillBadge>
               ),
@@ -100,7 +100,7 @@ const About = () => (
               size="2x"
               className="w-6 h-6 text-primary-200"
             />
-            Other Skills
+            Other
           </h3>
           <div className="flex flex-wrap gap-2">
             {["SQL", "NoSQL", "Storybook", "Scrum", "Jira", "Figma"].map((skill) => (

@@ -26,8 +26,8 @@ const Hero = () => (
             Senior Software Engineer
           </p>
           <p className="text-lg text-platinum max-w-lg">
-            8+ years of experience leveraging data to drive product decisions into successful user
-            experiences
+            8+ years of experience helping teams improve communication, standards, and processes
+            to deliver scalable and maintainable products.
           </p>
         </div>
 
@@ -36,17 +36,15 @@ const Hero = () => (
             href="https://linkedin.com/in/pnadalini"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-silver-lake-blue hover:text-french-gray transition-colors duration-300 transform hover:scale-110"
             aria-label="Visit Pietro's LinkedIn profile">
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            <FontAwesomeIcon icon={faLinkedin} size="2x" className="text-mint-green hover:text-dark-mint-green transition-colors duration-300 transform hover:scale-110" />
           </a>
           <a
             href="https://github.com/pnadalini"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-silver-lake-blue hover:text-french-gray transition-colors duration-300 transform hover:scale-110"
             aria-label="Visit Pietro's GitHub profile">
-            <FontAwesomeIcon icon={faGithub} size="2x" />
+            <FontAwesomeIcon icon={faGithub} size="2x" className="text-mint-green hover:text-dark-mint-green transition-colors duration-300 transform hover:scale-110" />
           </a>
         </div>
       </div>
