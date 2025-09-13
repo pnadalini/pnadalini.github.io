@@ -12,7 +12,7 @@ const Hero = () => (
     <div className="absolute inset-0 bg-gradient-to-br from-oxford-blue/70 via-indigo-dye/70 to-yinmn-blue/70"></div>
     <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
       <div className="flex justify-center lg:justify-end">
-        <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-silver-lake-blue/30 transform hover:scale-105 transition-transform duration-300">
+        <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-silver-lake-blue/30 transform hover:scale-105 transition-transform duration-300">
           <img src={heroPicture} alt="Pietro Nadalini" className="w-full h-full object-cover" />
         </div>
       </div>

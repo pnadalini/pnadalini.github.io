@@ -29,7 +29,7 @@
   --dark-mint-green: #52b788;
 }
 
-@theme inline {
+@theme {
   --color-rich-black: var(--rich-black);
   --color-rich-black-2: var(--rich-black-2);
   --color-oxford-blue: var(--oxford-blue);
