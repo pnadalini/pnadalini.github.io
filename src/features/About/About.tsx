@@ -30,11 +30,6 @@ const About = () => (
             individual that looks into improving software, processes and products for consumers and
             businesses.
           </p>
-          <p className="text-primary-100 leading-relaxed">
-            I enjoy reading, content creation workflows and learning new skills like the usage of
-            MCP to integrate AI into real software applications. My passion lies in building
-            scalable solutions that helps users and businesses.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
