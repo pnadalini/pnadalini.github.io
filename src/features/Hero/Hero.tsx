@@ -1,5 +1,5 @@
 import { Section } from "../../shared/Sections";
-import heroPicture from "./assets/avatar.png";
+import heroPicture from "./assets/avatar.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 

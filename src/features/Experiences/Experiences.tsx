@@ -11,7 +11,7 @@ const Experience = () => {
       achievements: [
         "Building Cryptocurrencies Hub, Blockchain, Crypto, and Digital Currencies (BCDC) product serving over 500M users",
         "Led web/mobile teams to increase TPV by more than 7% per year with new feature adoptions like recurring purchases",
-        "Led and worked with the frontend team to increase PYUSD stablecoin market cap by 300%+ in a year (to $3.5b) by adding rewards for holders and expanding the crypto networks offered on the system",
+        "Led and worked with the frontend team to increase PYUSD stablecoin market cap by 700%+ in a year (to $3.8b) by adding rewards for holders and expanding the crypto networks offered on the system",
         "Expanded capabilities of buy/hold/sell/transfer flows for more than 5 crypto networks on PayPal's financial section",
         "Improved e2e testing pass rate by 10% during regression testing, increasing unit test coverage to over 80%",
       ],
