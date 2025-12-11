@@ -73,9 +73,7 @@ const Experience = () => {
 
   return (
     <Section id="experience" className="bg-indigo-dye">
-      <SectionTitle subtitle="My professional journey and key achievements">
-        Professional Experience
-      </SectionTitle>
+      <SectionTitle subtitle="My professional journey and key achievements">Professional Experience</SectionTitle>
 
       <div className="space-y-8">
         {experiences.map((exp, index) => (

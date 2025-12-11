@@ -19,27 +19,36 @@ const Footer = () => (
             href="https://linkedin.com/in/pnadalini"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-mint-green hover:text-primary-100 transition-colors">
-            <FontAwesomeIcon icon={faLinkedin} size="2x" className="text-mint-green hover:text-dark-mint-green transition-colors duration-300 transform hover:scale-110" />
+            className="text-mint-green hover:text-primary-100 transition-colors"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              size="2x"
+              className="text-mint-green hover:text-dark-mint-green transition-colors duration-300 transform hover:scale-110"
+            />
           </a>
           <a
             href="https://github.com/pnadalini"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-mint-green hover:text-primary-50 transition-colors">
-            <FontAwesomeIcon icon={faGithub} size="2x" className="text-mint-green hover:text-dark-mint-green transition-colors duration-300 transform hover:scale-110" />
+            className="text-mint-green hover:text-primary-50 transition-colors"
+          >
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="2x"
+              className="text-mint-green hover:text-dark-mint-green transition-colors duration-300 transform hover:scale-110"
+            />
           </a>
         </div>
       </div>
 
       <div className="py-8 border-t border-primary-700">
         <p className="text-primary-300">
-          Made with <FontAwesomeIcon icon={faHeart} className="w-4 h-4" /> by <a
-            href="https://linkedin.com/in/pnadalini"
-            target="_blank"
-            rel="noopener noreferrer">
+          Made with <FontAwesomeIcon icon={faHeart} className="w-4 h-4" /> by{" "}
+          <a href="https://linkedin.com/in/pnadalini" target="_blank" rel="noopener noreferrer">
             Pietro Nadalini
-          </a>. Built with React, Vite, and Tailwind CSS.
+          </a>
+          . Built with React, Vite, and Tailwind CSS.
         </p>
       </div>
     </div>

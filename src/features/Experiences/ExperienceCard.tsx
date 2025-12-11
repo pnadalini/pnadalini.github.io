@@ -10,14 +10,7 @@ interface Props {
   technologies: string[];
 }
 
-const ExperienceCard = ({
-  company,
-  location,
-  title,
-  period,
-  achievements,
-  technologies,
-}: Props) => (
+const ExperienceCard = ({ company, location, title, period, achievements, technologies }: Props) => (
   <div className="bg-oxford-blue-2 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border border-primary-600">
     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
       <div>
@@ -47,15 +40,15 @@ const ExperienceCard = ({
       </ul>
 
       <div className="pt-4 border-t border-indigo-dye">
-          <p className="text-sm font-medium text-primary-50 mb-2">Technologies:</p>
-          <div className="flex flex-wrap gap-2">
-            {technologies.map((tech) => (
-              <span key={tech} className="bg-indigo-dye text-primary-100 px-2 py-1 rounded text-sm">
-                {tech}
-              </span>
-            ))}
-          </div>
+        <p className="text-sm font-medium text-primary-50 mb-2">Technologies:</p>
+        <div className="flex flex-wrap gap-2">
+          {technologies.map((tech) => (
+            <span key={tech} className="bg-indigo-dye text-primary-100 px-2 py-1 rounded text-sm">
+              {tech}
+            </span>
+          ))}
         </div>
+      </div>
     </div>
   </div>
 );
