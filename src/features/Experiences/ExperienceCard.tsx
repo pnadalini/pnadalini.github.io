@@ -7,10 +7,10 @@ interface Props {
   title: string;
   period: string;
   achievements: string[];
-  technologies: string[];
+  skills: string[];
 }
 
-const ExperienceCard = ({ company, location, title, period, achievements, technologies }: Props) => (
+const ExperienceCard = ({ company, location, title, period, achievements, skills }: Props) => (
   <div className="bg-oxford-blue-2 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border border-primary-600">
     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
       <div>
@@ -40,11 +40,11 @@ const ExperienceCard = ({ company, location, title, period, achievements, techno
       </ul>
 
       <div className="pt-4 border-t border-indigo-dye">
-        <p className="text-sm font-medium text-primary-50 mb-2">Technologies:</p>
+        <p className="text-sm font-medium text-primary-50 mb-2">Skills:</p>
         <div className="flex flex-wrap gap-2">
-          {technologies.map((tech) => (
-            <span key={tech} className="bg-indigo-dye text-primary-100 px-2 py-1 rounded text-sm">
-              {tech}
+          {skills.map((skill) => (
+            <span key={skill} className="bg-indigo-dye text-primary-100 px-2 py-1 rounded text-sm">
+              {skill}
             </span>
           ))}
         </div>
