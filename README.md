@@ -34,3 +34,15 @@ npm install
 npm run dev
 ```
 
+## 🔐 Environment Variables
+
+This project uses environment variables for configuration. Create a `.env` file in the root directory following the example `.env.example`:
+
+```bash
+VITE_PUBLIC_POSTHOG_KEY=your_posthog_key_here
+VITE_PUBLIC_POSTHOG_HOST=https://us.i.posthog.com
+```
+
+### GitHub Pages Deployment
+
+For GitHub Pages deployment, you need to configure the environment variables as GitHub Secrets
