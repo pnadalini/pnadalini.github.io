@@ -1,6 +1,6 @@
 import { Section } from "../Sections";
+import SocialLinks from "../SocialLinks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => (
@@ -13,33 +13,8 @@ const Footer = () => (
         </p>
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-        <div className="flex items-center gap-6">
-          <a
-            href="https://linkedin.com/in/pnadalini"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-mint-green hover:text-primary-100 transition-colors"
-          >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size="2x"
-              className="text-mint-green hover:text-dark-mint-green transition-colors duration-300 transform hover:scale-110"
-            />
-          </a>
-          <a
-            href="https://github.com/pnadalini"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-mint-green hover:text-primary-50 transition-colors"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="2x"
-              className="text-mint-green hover:text-dark-mint-green transition-colors duration-300 transform hover:scale-110"
-            />
-          </a>
-        </div>
+      <div className="flex justify-center">
+        <SocialLinks />
       </div>
 
       <div className="py-8 border-t border-primary-700">
