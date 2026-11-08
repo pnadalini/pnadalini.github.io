@@ -1,7 +1,7 @@
 import { Section } from "../../shared/Sections";
+import SocialLinks from "../../shared/SocialLinks";
+import { calculateYearsOfExperience } from "../../shared/yearsOfExperience";
 import heroPicture from "./assets/avatar.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import "./hero.css";
 
@@ -20,39 +20,14 @@ const Hero = () => (
             Pietro
             <span className="block text-silver-lake-blue">Nadalini</span>
           </h1>
-          <p className="text-xl md:text-2xl text-french-gray font-light">Senior Software Engineer</p>
+          <p className="text-xl md:text-2xl text-french-gray font-light">Engineering Manager</p>
           <p className="text-lg text-platinum max-w-lg">
-            8+ years of experience helping teams improve communication, standards, and processes to deliver scalable and
-            maintainable products.
+            {calculateYearsOfExperience()}+ years building consumer and fintech products for 500M+ users, and leading
+            distributed teams across LATAM and North America with AI-first workflows.
           </p>
         </div>
 
-        <div className="flex items-center gap-6">
-          <a
-            href="https://linkedin.com/in/pnadalini"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit Pietro's LinkedIn profile"
-          >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size="2x"
-              className="text-mint-green hover:text-dark-mint-green transition-colors duration-300 transform hover:scale-110"
-            />
-          </a>
-          <a
-            href="https://github.com/pnadalini"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Visit Pietro's GitHub profile"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="2x"
-              className="text-mint-green hover:text-dark-mint-green transition-colors duration-300 transform hover:scale-110"
-            />
-          </a>
-        </div>
+        <SocialLinks />
       </div>
     </div>
   </Section>
