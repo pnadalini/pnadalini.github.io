@@ -8,9 +8,12 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const hasSolidBackground = isScrolled || isMobileMenuOpen;
 
   const navItems = [
     { label: "Home", href: "#hero" },
@@ -22,14 +25,14 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled || isMobileMenuOpen ? "bg-platinum backdrop-blur-md shadow-lg py-2" : "bg-transparent py-4"
+        hasSolidBackground ? "bg-platinum backdrop-blur-md shadow-lg py-2" : "bg-transparent py-4"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <a
             href="#hero"
-            className={`text-2xl font-bold transition-colors ${isScrolled ? "text-rich-black" : "text-platinum"}`}
+            className={`text-2xl font-bold transition-colors ${hasSolidBackground ? "text-rich-black" : "text-platinum"}`}
           >
             Pietro Nadalini
           </a>
@@ -41,7 +44,7 @@ const Navbar = () => {
                 key={item.label}
                 href={item.href}
                 className={`font-medium transition-colors hover:text-yinmn-blue ${
-                  isScrolled ? "text-oxford-blue-2" : "text-french-gray"
+                  hasSolidBackground ? "text-oxford-blue-2" : "text-french-gray"
                 }`}
               >
                 {item.label}
@@ -52,8 +55,9 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden ${isMobileMenuOpen ? "bg-platinum text-rich-black" : "text-platinum"} 
-            ${isScrolled ? "text-rich-black" : "text-platinum"}`}
+            aria-label="Toggle navigation menu"
+            aria-expanded={isMobileMenuOpen}
+            className={`md:hidden cursor-pointer ${hasSolidBackground ? "text-rich-black" : "text-platinum"}`}
           >
             <div className="w-6 h-6 flex flex-col justify-center items-center">
               <span
@@ -80,7 +84,7 @@ const Navbar = () => {
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`block py-2 font-medium transition-colors hover:text-yinmn-blue ${
-                  isScrolled ? "text-oxford-blue-2" : "text-french-gray"
+                  hasSolidBackground ? "text-oxford-blue-2" : "text-french-gray"
                 }`}
               >
                 {item.label}
